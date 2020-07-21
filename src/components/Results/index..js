@@ -58,11 +58,7 @@ class Results extends Component {
                   <button
                     onClick={() => this.handleSave(result)}
                     className='btn badge-pill btn-outline-warning mt-3 ml-3'>
-                    {this.setState.savedbooks
-                      .map((book) => book._id)
-                      .includes(result._id)
-                      ? 'Unsave'
-                      : 'Save'}
+                    {this.setState.savedbooks.map((book) => book._id).includes(result._id) ? 'Unsave' : 'Save'}
                   </button>
                 </div>
               </div>
