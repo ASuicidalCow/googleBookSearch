@@ -1,11 +1,11 @@
-import React from 'react';
-import Form from '../components/Form';
-import Results from '../components/Results';
-import API from '../utils/API';
+import React from "react";
+import Form from "../components/Form";
+import Results from "../components/Results/index.";
+import API from "../utils/API";
 
 class Search extends React.Component {
   state = {
-    value: '',
+    value: "",
     books: []
   };
 
@@ -54,9 +54,9 @@ class Search extends React.Component {
           handleInputChange={this.handleInputChange}
           handleFormSubmit={this.handleFormSubmit}
         />
-        <div className="container">
-            <h2>Results</h2>
-            <Results books={this.state.books}/>
+        <div className='container'>
+          <h2>Results</h2>
+          <Results books={this.state.books} />
         </div>
       </div>
     );
